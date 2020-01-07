@@ -1,0 +1,103 @@
+body {margin:0;}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;  /*remove all natural margins of ul*/
+  padding: 0; /*remove all natural padding of ul*/
+  /*border: 1px dotted #ff0000; /*display a container border*/
+  display: flex;  /*This is always needed to use flexbox properties*/
+  justify-content: space-between; /*This makes all space between the elements equal*/
+  height: 300px;  /*Set the height of the container to this many px*/
+}
+
+li{
+  border: 1px solid black;
+  margin: 1.0em;  /*Margins are for outside container, em means 2times the size of current font*/
+  padding: .5em;  /*padding is for content within container*/
+
+}
+
+.flex1 {
+  /* order:2; */
+  flex-basis: 100%;  /*This allows us to keep percent size in all screens*/
+  background-color: #F1C232;
+}
+
+.flex2{
+  flex-basis: 100%; /*Use this much width on all screens*/
+  background-color: #B45F06;
+}
+
+.flex3{
+  flex-basis: 100%; /*Use this much width on all screens*/
+  background-color: #5B0F00;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+#pond{
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+#pond{
+  display:flex;
+  align-items:  flex-start; // Items align to the top of the container.
+  align-items:  flex-end; // Items align to the bottom of the container.
+  align-items:  center; // Items align at the vertical center of the container.
+  align-items:  baseline; // Items display at the baseline of the container.
+  align-items:  stretch; // Items are stretched to fit the container.
+}
+
+#pond{
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.yellow{
+  display: flex;
+  order: 1;   //target yellow, now move it this many from orignal
+  align-self: flex-end;
+}
+
+.pond{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+
+}
+
+.pond{
+  display: flex;
+  flex-flow: wrap column; //does both wrap and direction
+}
+
+
+//target whole lines, not items
+.pond{
+  align-content: flex-start; space-between; space-around;
+  align-content:flex-end;
+  flex-direction: column-reverse;
+  align-content:center;
+}
+
+
+*/
